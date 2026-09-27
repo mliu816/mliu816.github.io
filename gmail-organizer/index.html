@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gmail Organizer</title>
+  <meta name="description" content="A personal, self-hosted tool that organizes a Gmail inbox: labels, archiving, promotional cleanup and approved unsubscribes.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Gmail Organizer</h1>
+    <p>A personal, self-hosted inbox organizer for Gmail.</p>
+    <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a></nav>
+  </header>
+
+  <p>Gmail Organizer is a small Python program that its owner runs on their own computer to keep their Gmail inbox tidy. It uses the Gmail API to sort, label and clean up mail. It is not a hosted service, has no servers and no user accounts, and is not offered to the public.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li><strong>Audits</strong> the last 90 days of mail: who sends it, how often it is read, and whether it has been replied to.</li>
+    <li><strong>Labels</strong> messages into <em>Action Required</em>, <em>Receipts/Finance</em>, <em>Newsletters/Keep</em> and <em>Automated/Low Priority</em>.</li>
+    <li><strong>Archives</strong> low-priority notifications so the inbox stays close to empty.</li>
+    <li><strong>Moves expired promotions to Gmail's Trash</strong>, where they stay recoverable for 30 days. It never permanently deletes mail, and it caps how much it does in each run.</li>
+    <li><strong>Recommends unsubscribes</strong> for mailing lists that are rarely opened. It only unsubscribes from lists the owner approves, using the list's standard unsubscribe mechanism.</li>
+    <li><strong>Learns from corrections.</strong> If a message it cleaned up is moved back to the inbox, it stops cleaning up mail from that sender.</li>
+  </ul>
+
+  <h2>How Google data is handled</h2>
+  <div class="card">
+    <p>All processing happens on the owner's own computer. Message information is stored only in a local database on that computer and is never sent to the developer or to any third party. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+  </div>
+
+  <h2>Access it requests</h2>
+  <p>Gmail Organizer asks for one Google permission: <code>https://www.googleapis.com/auth/gmail.modify</code>. It needs this to read message headers and labels, apply labels, archive, move messages to Trash, and send unsubscribe emails that the owner has approved. This permission can't permanently delete mail.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:mliu816@gmail.com">mliu816@gmail.com</a></p>
+
+  <footer>Gmail Organizer · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>

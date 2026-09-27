@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tidybox by mliu816 Privacy Policy</title>
+  <meta name="description" content="How Tidybox by mliu816 accesses, uses, stores and shares Google user data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Tidybox by mliu816 · Effective September 26, 2026</p>
+    <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  </header>
+
+  <p>Tidybox by mliu816 ("the app") is a self-hosted Python program that its owner runs on their own computer to organize their own Gmail account. This policy explains what Google user data the app accesses, how it uses and stores that data, and who it is shared with.</p>
+
+  <h2>1. Data the app accesses</h2>
+  <p>With the Google permission <code>https://www.googleapis.com/auth/gmail.modify</code>, the app reads:</p>
+  <ul>
+    <li><strong>Message metadata:</strong> message and thread IDs, Gmail labels, the date received, and these headers: From, Subject, Date, List-Unsubscribe, List-Unsubscribe-Post, List-Id, Precedence, Auto-Submitted and Authentication-Results.</li>
+    <li><strong>The short preview snippet</strong> Gmail provides for each message.</li>
+    <li><strong>Sent-mail thread IDs</strong>, used only to tell whether you have replied to a conversation.</li>
+    <li><strong>Your Gmail address and mailbox history ID</strong>, used to process only what changed since the last run.</li>
+  </ul>
+  <p>The app does not download full message bodies or attachments.</p>
+
+  <h2>2. How the data is used</h2>
+  <p>The data is used only to provide the app's features to the account owner:</p>
+  <ul>
+    <li>Sorting messages into categories and applying Gmail labels.</li>
+    <li>Archiving low-priority mail and moving expired promotional mail to Gmail's Trash. Trash is recoverable for 30 days, and the app never permanently deletes mail.</li>
+    <li>Calculating per-sender statistics, such as read rate and replies, to recommend unsubscribes.</li>
+    <li>Carrying out unsubscribes the owner has explicitly approved.</li>
+    <li>Writing reports and logs of these actions for the owner to review.</li>
+  </ul>
+  <p>The data is not used for advertising, is not sold, and is not used to develop, improve or train generalized AI or machine-learning models.</p>
+
+  <h2>3. Storage and security</h2>
+  <ul>
+    <li>All data is stored <strong>only on the owner's own computer</strong>, in a local SQLite database, report files and log files in the app's folder.</li>
+    <li>The Google OAuth token is stored in a local file on the same computer and is used only to call the Gmail API.</li>
+    <li>The app has no servers. No Google user data is sent to the developer or stored in any cloud service run by the developer.</li>
+    <li>All traffic to Google's APIs and to unsubscribe endpoints uses HTTPS.</li>
+  </ul>
+
+  <h2>4. Sharing and disclosure</h2>
+  <p>Google user data is not shared with, transferred to, or sold to any third party, with one narrow exception. When the owner <strong>explicitly approves</strong> unsubscribing from a mailing list, the app contacts that list's sender using the unsubscribe method the sender published in the email's List-Unsubscribe header:</p>
+  <ul>
+    <li>an HTTPS request to the sender's unsubscribe address, as defined by RFC 8058 "one-click" unsubscribe, or</li>
+    <li>a short "unsubscribe" email sent from the owner's Gmail account to the sender's unsubscribe address.</li>
+  </ul>
+  <p>Only the information in the sender's own unsubscribe link or address is sent, which is what the sender needs to remove you from their list. Nothing else is sent.</p>
+
+  <h2>5. Limited Use disclosure</h2>
+  <div class="card">
+    <p>Tidybox by mliu816's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  </div>
+
+  <h2>6. Retention and deletion</h2>
+  <ul>
+    <li>Local data stays on the owner's computer until the owner deletes it. Deleting the app's folder, or its <code>organizer.db</code>, <code>token.json</code>, <code>reports</code> and <code>logs</code> files, removes all stored data.</li>
+    <li>You can revoke the app's access to your Google account at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. After you revoke access, the app can no longer read or change your mail.</li>
+  </ul>
+
+  <h2>7. Children</h2>
+  <p>The app is not directed to children and is intended only for use by its owner.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:mliu816@gmail.com">mliu816@gmail.com</a></p>
+
+  <footer>Tidybox by mliu816 · <a href="./">Home</a> · <a href="terms.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>
